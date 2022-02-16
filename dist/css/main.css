@@ -115,7 +115,6 @@
 }
 
 .showcase-content a .btn-icon {
-  border: 1px solid #fff;
   margin-left: 2rem;
 }
 
@@ -358,6 +357,7 @@
   max-width: 75%;
   margin: 1rem auto;
   overflow: auto;
+  margin-bottom: 3rem;
 }
 
 .footer a {
@@ -383,6 +383,16 @@
   -ms-grid-columns: (1fr)[4];
       grid-template-columns: repeat(4, 1fr);
   grid-gap: 2rem;
+}
+
+.footer .copyright {
+  text-align: center;
+  margin-top: 3rem;
+}
+
+.footer .copyright span {
+  font-weight: 700;
+  cursor: pointer;
 }
 
 @media screen and (max-width: 960px) {
