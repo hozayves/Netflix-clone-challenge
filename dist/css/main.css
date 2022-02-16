@@ -1,0 +1,514 @@
+.showcase {
+  width: 100%;
+  height: 93vh;
+  position: relative;
+  background: url("../images/background.jpg") no-repeat center center/cover;
+}
+
+.showcase::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  background: rgba(0, 0, 0, 0.4);
+  -webkit-box-shadow: inset 180px 100px 250px #000000, inset -180px -100px 250px #000000;
+          box-shadow: inset 180px 100px 250px #000000, inset -180px -100px 250px #000000;
+}
+
+.showcase-top {
+  position: relative;
+  height: 90px;
+  z-index: 2;
+}
+
+.showcase-top img {
+  width: 170px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+.showcase-top a {
+  position: absolute;
+  top: 50%;
+  right: 0;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  display: inline-block;
+  background-color: #e50914;
+  color: #fff;
+  padding: 0.4rem 1.3rem;
+  font-size: 1rem;
+  text-align: center;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  margin-right: 0.5rem;
+  outline: none;
+  -webkit-box-shadow: 0 1px 0 rgba(0, 0, 0, 0.45);
+          box-shadow: 0 1px 0 rgba(0, 0, 0, 0.45);
+  border-radius: 2px;
+  border-radius: 5px;
+}
+
+.showcase-content {
+  position: relative;
+  margin: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  margin-top: 9rem;
+  z-index: 2;
+}
+
+.showcase-content h1 {
+  font-weight: 700;
+  font-size: 3.2rem;
+  line-height: 1.1;
+  margin: 1rem 0;
+}
+
+.showcase-content p {
+  text-transform: uppercase;
+  color: #fff;
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 1.25;
+  margin: 0 0 2rem;
+  word-spacing: 0.3rem;
+}
+
+.showcase-content a {
+  display: inline-block;
+  background-color: #e50914;
+  color: #fff;
+  padding: 0.4rem 1.3rem;
+  font-size: 1rem;
+  text-align: center;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  margin-right: 0.5rem;
+  outline: none;
+  -webkit-box-shadow: 0 1px 0 rgba(0, 0, 0, 0.45);
+          box-shadow: 0 1px 0 rgba(0, 0, 0, 0.45);
+  border-radius: 2px;
+  font-size: 1rem;
+  padding: 0.8rem 1.3rem;
+  text-transform: uppercase;
+}
+
+.showcase-content a .btn-icon {
+  border: 1px solid #fff;
+  margin-left: 2rem;
+}
+
+.tabs {
+  background: #141414;
+  padding-top: 1rem;
+  border-bottom: 3px solid #3d3d3d;
+}
+
+.tabs p {
+  font-size: 1.2rem;
+  padding-top: 0.5rem;
+}
+
+.tabs .container {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[3];
+      grid-template-columns: repeat(3, 1fr);
+  grid-gap: 1rem;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+  max-width: 70%;
+  margin: auto;
+  overflow: hidden;
+  padding: 0 2rem;
+}
+
+.tabs .container div {
+  padding: 1.5rem 0;
+}
+
+.tabs .container div:hover {
+  cursor: pointer;
+  color: #fff;
+}
+
+.tabs .container .tab-border {
+  border-bottom: 4px solid #e50914;
+}
+
+.tab-content {
+  padding: 3rem 0;
+  background: #000;
+  color: #fff;
+}
+
+.tab-content .container {
+  max-width: 70%;
+  margin: auto;
+  overflow: hidden;
+  padding: 0 2rem;
+}
+
+.tab-content .container #tab-1-content,
+.tab-content .container #tab-2-content,
+.tab-content .container #tab-3-content {
+  display: none;
+}
+
+.tab-content .container .show {
+  display: block !important;
+}
+
+.tab-content .container #tab-1-content .tab-1-content-inner {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[2];
+      grid-template-columns: repeat(2, 1fr);
+  grid-gap: 2rem;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.tab-content .container #tab-1-content .tab-1-content-inner div a {
+  display: inline-block;
+  background-color: #e50914;
+  color: #fff;
+  padding: 0.4rem 1.3rem;
+  font-size: 1rem;
+  text-align: center;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  margin-right: 0.5rem;
+  outline: none;
+  -webkit-box-shadow: 0 1px 0 rgba(0, 0, 0, 0.45);
+          box-shadow: 0 1px 0 rgba(0, 0, 0, 0.45);
+  border-radius: 2px;
+  font-size: 1rem;
+  padding: 0.8rem 1.3rem;
+  text-transform: uppercase;
+}
+
+.tab-content .container #tab-1-content .tab-1-content-inner div p {
+  font-size: 1.3rem;
+  margin-bottom: 1rem;
+}
+
+.tab-content .container #tab-2-content .tab-2-content-top {
+  padding: 0 1rem;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 2fr 1fr;
+      grid-template-columns: 2fr 1fr;
+  grid-gap: 1rem;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.tab-content .container #tab-2-content .tab-2-content-top p {
+  font-size: 1.3rem;
+  margin-bottom: 1rem;
+}
+
+.tab-content .container #tab-2-content .tab-2-content-top a {
+  display: inline-block;
+  background-color: #e50914;
+  color: #fff;
+  padding: 0.4rem 1.3rem;
+  font-size: 1rem;
+  text-align: center;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  margin-right: 0.5rem;
+  outline: none;
+  -webkit-box-shadow: 0 1px 0 rgba(0, 0, 0, 0.45);
+          box-shadow: 0 1px 0 rgba(0, 0, 0, 0.45);
+  border-radius: 2px;
+  font-size: 1rem;
+  padding: 0.8rem 1.3rem;
+  text-transform: uppercase;
+}
+
+.tab-content .container #tab-2-content .tab-2-content-bottom {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[3];
+      grid-template-columns: repeat(3, 1fr);
+  grid-gap: 2rem;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 2rem;
+  text-align: center;
+}
+
+.tab-content .container #tab-2-content .tab-2-content-bottom div .text-dark {
+  color: #999;
+}
+
+.tab-content .container #tab-2-content .tab-2-content-bottom div .text-md {
+  font-size: 1rem;
+}
+
+.tab-content .container #tab-3-content .text-center {
+  text-align: center;
+}
+
+.tab-content .container #tab-3-content .text-center a {
+  display: inline-block;
+  background-color: #e50914;
+  color: #fff;
+  padding: 0.4rem 1.3rem;
+  font-size: 1rem;
+  text-align: center;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  margin-right: 0.5rem;
+  outline: none;
+  -webkit-box-shadow: 0 1px 0 rgba(0, 0, 0, 0.45);
+          box-shadow: 0 1px 0 rgba(0, 0, 0, 0.45);
+  border-radius: 2px;
+  font-size: 1rem;
+  padding: 0.8rem 1.3rem;
+  text-transform: uppercase;
+}
+
+.tab-content .container #tab-3-content .text-center .text-lg {
+  font-size: 1.3rem;
+  margin-bottom: 1rem;
+}
+
+.tab-content .container #tab-3-content .table {
+  margin-top: 2rem;
+  width: 100%;
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+.tab-content .container #tab-3-content .table thead th {
+  text-transform: uppercase;
+  padding: 0.8rem;
+}
+
+.tab-content .container #tab-3-content .table tbody tr td {
+  color: #999;
+  text-align: center;
+  padding: 0.8rem 1.2rem;
+}
+
+.tab-content .container #tab-3-content .table tbody tr td:first-child {
+  text-align: left;
+}
+
+.tab-content .container #tab-3-content .table tbody tr {
+  border-bottom: 1px solid transparent;
+}
+
+.tab-content .container #tab-3-content .table tbody tr:hover {
+  background-color: #222;
+  cursor: pointer;
+  border-bottom: 1px solid #333;
+}
+
+.tab-content .container #tab-3-content .table tbody tr:nth-child(odd) {
+  background-color: #222;
+  border-bottom: 1px solid transparent;
+}
+
+.footer {
+  max-width: 75%;
+  margin: 1rem auto;
+  overflow: auto;
+}
+
+.footer a {
+  color: #999;
+  font-size: 0.9rem;
+}
+
+.footer a:hover {
+  color: #fff;
+}
+
+.footer p {
+  margin-bottom: 1.5rem;
+}
+
+.footer li {
+  line-height: 1.9;
+}
+
+.footer .footer-cols {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[4];
+      grid-template-columns: repeat(4, 1fr);
+  grid-gap: 2rem;
+}
+
+@media screen and (max-width: 960px) {
+  .showcase {
+    height: 70vh;
+  }
+  .showcase::after {
+    background: rgba(0, 0, 0, 0.3);
+    -webkit-box-shadow: inset 120px 120px 250px #000000, inset -120px -120px 250px #000000;
+            box-shadow: inset 120px 120px 250px #000000, inset -120px -120px 250px #000000;
+  }
+  .showcase-top img {
+    top: 30%;
+    left: 5%;
+    -webkit-transform: translate(0);
+            transform: translate(0);
+  }
+  .showcase-content {
+    margin-top: 3rem;
+  }
+  .showcase-content h1 {
+    font-size: 2.7rem;
+    line-height: 1;
+  }
+  .showcase-content p {
+    font-size: 0.8rem;
+  }
+  .showcase-content a {
+    font-size: 0.8rem;
+    padding: 0.7rem 1rem;
+  }
+  .hide-sm {
+    display: none;
+  }
+  .tab-content .container {
+    max-width: 100%;
+  }
+  .tab-content .container #tab-1-content .tab-1-content-inner div a {
+    font-size: 0.8rem;
+  }
+  .tab-content .container #tab-1-content .tab-1-content-inner div p {
+    font-size: 1rem;
+  }
+  .tab-content .container #tab-2-content .tab-2-content-top p {
+    font-size: 1rem;
+  }
+  .tab-content .container #tab-2-content .tab-2-content-top a {
+    font-size: 0.8rem;
+  }
+  .tab-content .container #tab-2-content .tab-2-content-bottom div .text-md {
+    font-size: 0.8rem;
+  }
+  .tab-content .container #tab-3-content .text-center a {
+    font-size: 0.8rem;
+  }
+  .tab-content .container #tab-3-content .text-center .text-lg {
+    font-size: 1rem;
+  }
+  .footer .footer-cols {
+    -ms-grid-columns: (1fr)[2];
+        grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .showcase::after {
+    background: rgba(0, 0, 0, 0.2);
+    -webkit-box-shadow: inset 80px 80px 250px #000000, inset -80px -80px 250px #000000;
+            box-shadow: inset 80px 80px 250px #000000, inset -80px -80px 250px #000000;
+  }
+  .tab-content .container {
+    max-width: 90%;
+    padding: 0;
+  }
+  .tab-content .container #tab-1-content .tab-1-content-inner {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+    text-align: center;
+  }
+  .tab-content .container #tab-2-content {
+    margin-top: 3rem;
+  }
+  .tab-content .container #tab-2-content .tab-2-content-top {
+    display: block;
+    text-align: center;
+  }
+  .tab-content .container #tab-2-content .tab-2-content-bottom {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+  }
+  .tab-content .container #tab-3-content {
+    margin-top: 3rem;
+  }
+}
+
+*, *::after, *::before {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+  background: #000;
+  color: #999;
+}
+
+ul {
+  list-style: none;
+}
+
+h1, h2, h3, h4 {
+  color: #fff;
+}
+
+a {
+  color: #fff;
+  text-decoration: none;
+}
+
+p {
+  margin: 0.5rem 0;
+}
+
+img {
+  width: 100%;
+}
+/*# sourceMappingURL=main.css.map */
